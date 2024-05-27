@@ -1,0 +1,1472 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+  Copyright (c) 1986 - 2023 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: SRAM 6T SNM HOLD.sp                                               
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i SRAM 6T SNM HOLD.sp -o C:\Users\Mohammad\Desktop\Low Power Project\SRAM HOLD SNM 6 TRANSISTOR\SRAM 6T SNM HOLD.lis -mt 2
+  Start time: Mon Feb 20 20:53:25 2023
+  lic:  
+  lic: FLEXlm: SDK_12.3 
+  lic: USER:   Mohammad             HOSTNAME: MO-LT 
+  lic: HOSTID: "38b1db24c054"       PID:      19684 
+  lic: Using FLEXlm license file: 
+  lic: 27000@MO-LT 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@MO-LT 
+  lic:   
+1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+ ******  
+ 
+
+ ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
+ Model file: 45nm.pm
+ Model line:            4
+ Model Name: nmos  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 1.25e-09 
+    TOXE = 1.25e-09 
+    TOXP =  1e-09 
+    TOXM = 1.25e-09 
+    DTOX = 2.5e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =   2.22 
+    XJ = 1.4e-08 
+    VSAT = 1.7e+05 
+    A0 =      1 
+    AGS =      0 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+04 
+    KETA =   0.04 
+    NSUB =  6e+16 
+    NDEP = 3.24e+18 
+    NSD =  2e+20 
+    NGATE =  1e+23 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =    0.4 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =      0 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 =  1e-10 
+    DVTP1 =    0.1 
+    W0 = 2.5e-06 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 =      0 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =    0.5 
+    DSUB =    0.1 
+    VTH0 = 0.4689 
+    EU =   1.67 
+    UA =  6e-10 
+    UA1 = 4.31e-09 
+    UB = 1.2e-18 
+    UB1 = 7.61e-18 
+    UC =      0 
+    UC1 = -5.6e-11 
+    U0 =  0.054 
+    UTE =   -1.5 
+    VOFF =  -0.13 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.08 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+06 
+    DELTA =   0.01 
+    RDSW =    155 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     80 
+    RSW =     80 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.0055 
+    ETAB =      0 
+    PCLM =   0.02 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = -0.005 
+    PSCBE1 = 8.14e+08 
+    PSCBE2 =  1e-07 
+    PVAG =  1e-20 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -2e-08 
+    XLREF = -2e-08 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+09 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC =   0.02 
+    BIGC = 0.0025 
+    CIGC =  0.002 
+    AIGSD =   0.02 
+    BIGSD = 0.0025 
+    CIGSD =  0.002 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =  0.001 
+    IJTHSREV =  0.001 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =  -0.55 
+    GBMIN =  1e-10 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 2.653e-10 
+    CGDL = 2.653e-10 
+    CKAPPAS =   0.03 
+    CKAPPAD =   0.03 
+    CF = 1.269e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =  5e-09 
+    DLC = 3.75e-09 
+    DLCIG = 3.75e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =    0.9 
+    VOFFCV =   0.02 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =  0.001 
+    TPB =  0.005 
+    TCJSW =  0.001 
+    TPBSW =  0.005 
+    TCJSWG =  0.001 
+    TPBSWG =  0.005 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 1.1e-10 
+    CGDO = 1.1e-10 
+    CGBO = 2.56e-11 
+    XPART =      0 
+    RSH =      5 
+    JSS = 0.0001 
+    JSWS =  1e-11 
+    JSWGS =  1e-10 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS =  5e-10 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS =  3e-10 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD =  1e-11 
+    JSWGD =  1e-10 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD =  5e-10 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD =  5e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 3.75e-09 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT =  5e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+41 
+    NOIB = 3.125e+26 
+    NOIC = 8.75e+09 
+    EM = 4.1e+07 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ Model file: 45nm.pm
+ Model line:           74
+ Model Name: pmos  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 1.3e-09 
+    TOXE = 1.3e-09 
+    TOXP =  1e-09 
+    TOXM = 1.3e-09 
+    DTOX =  3e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    2.1 
+    XJ = 1.4e-08 
+    VSAT = 1.5e+05 
+    A0 =      1 
+    AGS =  1e-20 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+04 
+    KETA = -0.047 
+    NSUB =  6e+16 
+    NDEP = 2.44e+18 
+    NSD =  2e+20 
+    NGATE =  1e+23 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =    0.4 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =  -0.01 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 =  1e-11 
+    DVTP1 =   0.05 
+    W0 = 2.5e-06 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 = -0.032 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =   0.56 
+    DSUB =    0.1 
+    VTH0 = -0.4916 
+    EU =      1 
+    UA =  2e-09 
+    UA1 = 4.31e-09 
+    UB =  5e-19 
+    UB1 = 7.61e-18 
+    UC =      0 
+    UC1 = -5.6e-11 
+    U0 =   0.02 
+    UTE =   -1.5 
+    VOFF = -0.126 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.08 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+06 
+    DELTA =   0.01 
+    RDSW =    155 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     75 
+    RSW =     75 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.0055 
+    ETAB =      0 
+    PCLM =   0.12 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = 3.4e-08 
+    PSCBE1 = 8.14e+08 
+    PSCBE2 = 9.58e-07 
+    PVAG =  1e-20 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -2e-08 
+    XLREF = -2e-08 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+09 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.01069 
+    BIGC = 0.001261 
+    CIGC = 0.0008 
+    AIGSD = 0.01069 
+    BIGSD = 0.001261 
+    CIGSD = 0.0008 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =  0.001 
+    IJTHSREV =  0.001 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =   0.55 
+    GBMIN =  1e-10 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 2.653e-10 
+    CGDL = 2.653e-10 
+    CKAPPAS =   0.03 
+    CKAPPAD =   0.03 
+    CF = 1.26e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =  5e-09 
+    DLC = 3.75e-09 
+    DLCIG = 3.75e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =    0.9 
+    VOFFCV =   0.02 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =  0.001 
+    TPB =  0.005 
+    TCJSW =  0.001 
+    TPBSW =  0.005 
+    TCJSWG =  0.001 
+    TPBSWG =  0.005 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 1.1e-10 
+    CGDO = 1.1e-10 
+    CGBO = 2.56e-11 
+    XPART =      0 
+    RSH =      5 
+    JSS = 0.0001 
+    JSWS =  1e-11 
+    JSWGS =  1e-10 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS =  5e-10 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS =  3e-10 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD =  1e-11 
+    JSWGD =  1e-10 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD =  5e-10 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD =  5e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 3.75e-09 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT =  5e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.188e+40 
+    NOIB = 1.5e+25 
+    NOIC = 8.75e+09 
+    EM = 4.1e+07 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+  **warning** (nmos:mnl (SRAM 6T SNM HOLD.sp:27)) Warning:  Acde = 0.280299 may be too small in BSIM4 model with w=2.25e-07 l=9e-08.
+  **warning** (SRAM 6T SNM HOLD.sp:42) Duplicate .ic/.nodeset declaration for node qb. Taking the .ic value 0.00
+  
+
+  **warning** the following singular supplies were terminated to 1 meg resistor 
+          supply       node1            node2
+(SRAM 6T SNM HOLD.sp:55)evd                     0:vd               defined in subckt 0                     0:0                defined in subckt 0               
+             
+ Warning:'1 connection nodes' occurs 2 times
+ Summary of 1 connection from the following nodes:
+ -----------------------
+ |Node      |Subckt    |
+ |----------+----------|
+ |bl        |0         |
+ |blb       |0         |
+ -----------------------
+              
+      
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+
+ **warning** an operating point request at time=0 and a transient uic results in no operating point
+
+
+ ******
+ 
+
+ ****** dc transfer curves tnom=  25.000 temp=  27.000 ******
+x
+
+ u            voltage    voltage   
+             qd         qbd        
+ -707.10678m    1.0959u  999.9979m 
+ -697.10678m    1.0571u  999.9980m 
+ -687.10678m    1.0252u  999.9980m 
+ -677.10678m    1.0022u  999.9980m 
+ -667.10678m  991.4741n  999.9980m 
+ -657.10678m  998.2171n  999.9979m 
+ -647.10678m    1.0301u  999.9978m 
+ -637.10678m    1.0989u  999.9975m 
+ -627.10678m    1.2223u  999.9970m 
+ -617.10678m    1.4271u  999.9962m 
+ -607.10678m    1.7536u  999.9951m 
+ -597.10678m    2.2629u  999.9933m 
+ -587.10678m    3.0469u  999.9907m 
+ -577.10678m    4.2440u  999.9867m 
+ -567.10678m    6.0626u  999.9807m 
+ -557.10678m    8.8155u  999.9718m 
+ -547.10678m   12.9725u  999.9583m 
+ -537.10678m   19.2367u  999.9383m 
+ -527.10678m   28.6594u  999.9084m 
+ -517.10678m   42.8085u  999.8640m 
+ -507.10678m   64.0176u  999.7980m 
+ -497.10678m   95.7535u  999.7001m 
+ -487.10678m  143.1567u  999.5553m 
+ -477.10678m  213.8368u  999.3415m 
+ -467.10678m  319.0415u  999.0269m 
+ -457.10678m  475.3589u  998.5658m 
+ -447.10678m  707.1608u  997.8941m 
+ -437.10678m    1.0500m  996.9245m 
+ -427.10678m    1.5550m  995.5428m 
+ -417.10678m    2.2943m  993.6092m 
+ -407.10678m    3.3659m  990.9664m 
+ -397.10678m    4.8963m  987.4562m 
+ -387.10678m    7.0382m  982.9408m 
+ -377.10678m    9.9588m  977.3211m 
+ -367.10678m   13.8216m  970.5460m 
+ -357.10678m   18.7644m  962.6098m 
+ -347.10678m   24.8829m  953.5441m 
+ -337.10678m   32.2247m  943.4107m 
+ -327.10678m   40.7916m  932.3036m 
+ -317.10678m   50.5431m  920.3570m 
+ -307.10678m   61.3914m  907.7461m 
+ -297.10678m   73.1885m  894.6618m 
+ -287.10678m   85.7276m  881.2707m 
+ -277.10678m   98.7824m  867.6916m 
+ -267.10678m  112.1621m  853.9992m 
+ -257.10678m  125.7362m  840.2371m 
+ -247.10678m  139.4264m  826.4309m 
+ -237.10678m  153.1876m  812.5953m 
+ -227.10678m  166.9940m  798.7397m 
+ -217.10678m  180.8305m  784.8698m 
+ -207.10678m  194.6878m  770.9893m 
+ -197.10678m  208.5601m  757.1008m 
+ -187.10678m  222.4434m  743.2061m 
+ -177.10678m  236.3351m  729.3065m 
+ -167.10678m  250.2334m  715.4030m 
+ -157.10678m  264.1368m  701.4962m 
+ -147.10678m  278.0444m  687.5866m 
+ -137.10678m  291.9553m  673.6748m 
+ -127.10678m  305.8689m  659.7611m 
+ -117.10678m  319.7847m  645.8458m 
+ -107.10678m  333.7024m  631.9290m 
+  -97.10678m  347.6215m  618.0111m 
+  -87.10678m  361.5418m  604.0920m 
+  -77.10678m  375.4631m  590.1721m 
+  -67.10678m  389.3852m  576.2514m 
+  -57.10678m  403.3078m  562.3300m 
+  -47.10678m  417.2309m  548.4080m 
+  -37.10678m  431.1543m  534.4856m 
+  -27.10678m  445.0780m  520.5627m 
+  -17.10678m  459.0017m  506.6395m 
+   -7.10678m  472.9255m  492.7161m 
+    2.89322m  486.8492m  478.7924m 
+   12.89322m  500.7727m  464.8687m 
+   22.89322m  514.6960m  450.9449m 
+   32.89322m  528.6191m  437.0212m 
+   42.89322m  542.5417m  423.0977m 
+   52.89322m  556.4639m  409.1744m 
+   62.89322m  570.3855m  395.2516m 
+   72.89322m  584.3065m  381.3292m 
+   82.89322m  598.2268m  367.4076m 
+   92.89322m  612.1462m  353.4868m 
+  102.89322m  626.0646m  339.5672m 
+  112.89322m  639.9819m  325.6489m 
+  122.89322m  653.8979m  311.7322m 
+  132.89322m  667.8123m  297.8176m 
+  142.89322m  681.7250m  283.9055m 
+  152.89322m  695.6355m  269.9965m 
+  162.89322m  709.5435m  256.0912m 
+  172.89322m  723.4485m  242.1906m 
+  182.89322m  737.3499m  228.2960m 
+  192.89322m  751.2468m  214.4088m 
+  202.89322m  765.1381m  200.5315m 
+  212.89322m  779.0222m  186.6673m 
+  222.89322m  792.8969m  172.8212m 
+  232.89322m  806.7592m  159.0006m 
+  242.89322m  820.6040m  145.2180m 
+  252.89322m  834.4240m  131.4938m 
+  262.89322m  848.2071m  117.8635m 
+  272.89322m  861.9329m  104.3894m 
+  282.89322m  875.5667m   91.1779m 
+  292.89322m  889.0487m   78.3948m 
+  302.89322m  902.2800m   66.2574m 
+  312.89322m  915.1131m   54.9875m 
+  322.89322m  927.3627m   44.7600m 
+  332.89322m  938.8425m   35.6865m 
+  342.89322m  949.3997m   27.8263m 
+  352.89322m  958.9246m   21.1953m 
+  362.89322m  967.3424m   15.7661m 
+  372.89322m  974.6084m   11.4628m 
+  382.89322m  980.7115m    8.1641m 
+  392.89322m  985.6828m    5.7148m 
+  402.89322m  989.6017m    3.9466m 
+  412.89322m  992.5913m    2.6987m 
+  422.89322m  994.8041m    1.8330m 
+  432.89322m  996.4000m    1.2395m 
+  442.89322m  997.5278m  835.5932u 
+  452.89322m  998.3129m  562.1290u 
+  462.89322m  998.8536m  377.5328u 
+  472.89322m  999.2235m  253.1950u 
+  482.89322m  999.4752m  169.5989u 
+  492.89322m  999.6459m  113.4920u 
+  502.89322m  999.7613m   75.9005u 
+  512.89322m  999.8393m   50.7588u 
+  522.89322m  999.8918m   33.9735u 
+  532.89322m  999.9271m   22.7866u 
+  542.89322m  999.9508m   15.3438u 
+  552.89322m  999.9667m   10.4006u 
+  562.89322m  999.9773m    7.1237u 
+  572.89322m  999.9844m    4.9564u 
+  582.89322m  999.9892m    3.5271u 
+  592.89322m  999.9923m    2.5886u 
+  602.89322m  999.9944m    1.9763u 
+  612.89322m  999.9958m    1.5811u 
+  622.89322m  999.9967m    1.3303u 
+  632.89322m  999.9973m    1.1761u 
+  642.89322m  999.9976m    1.0864u 
+  652.89322m  999.9978m    1.0402u 
+  662.89322m  999.9979m    1.0235u 
+  672.89322m  999.9980m    1.0272u 
+  682.89322m  999.9980m    1.0451u 
+  692.89322m  999.9980m    1.0733u 
+  702.89322m  999.9979m    1.1091u 
+y
+ maxvd= 620.5855m    at=-357.1068m
+             from=-707.1068m    to= 702.8932m
+ snm= 438.8202m
+ ******
+ 
+
+ ****** transient analysis tnom=  25.000 temp=  27.000 ******
+x
+
+ time         voltage    voltage   
+             qb         q          
+    0.          1.0000     1.0000  
+    1.00000n  483.0730m  483.0730m 
+    2.00000n  482.8270m  482.8271m 
+    3.00000n  482.9377m  482.9377m 
+    4.00000n  482.6387m  482.6387m 
+    5.00000n  482.6607m  482.6608m 
+    6.00000n  482.8255m  482.8255m 
+    7.00000n  482.9902m  482.9903m 
+    8.00000n  483.0534m  483.0535m 
+    9.00000n  482.9443m  482.9444m 
+   10.00000n  482.8352m  482.8353m 
+   11.00000n  482.7262m  482.7262m 
+   12.00000n  482.6171m  482.6172m 
+   13.00000n  482.5888m  482.5889m 
+   14.00000n  482.6976m  482.6977m 
+   15.00000n  482.8064m  482.8065m 
+   16.00000n  482.9152m  482.9153m 
+   17.00000n  483.0240m  483.0241m 
+   18.00000n  483.0522m  483.0522m 
+   19.00000n  482.9437m  482.9437m 
+   20.00000n  482.8352m  482.8352m 
+   21.00000n  482.7267m  482.7267m 
+   22.00000n  482.6182m  482.6182m 
+   23.00000n  482.5901m  482.5901m 
+   24.00000n  482.6983m  482.6984m 
+   25.00000n  482.8065m  482.8066m 
+   26.00000n  482.9147m  482.9148m 
+   27.00000n  483.0229m  483.0230m 
+   28.00000n  483.0509m  483.0510m 
+   29.00000n  482.9430m  482.9431m 
+   30.00000n  482.8351m  482.8352m 
+   31.00000n  482.7272m  482.7272m 
+   32.00000n  482.6193m  482.6193m 
+   33.00000n  482.5913m  482.5914m 
+   34.00000n  482.6989m  482.6990m 
+   35.00000n  482.8066m  482.8066m 
+   36.00000n  482.9142m  482.9143m 
+   37.00000n  483.0218m  483.0219m 
+   38.00000n  483.0497m  483.0498m 
+   39.00000n  482.9424m  482.9424m 
+   40.00000n  482.8350m  482.8351m 
+   41.00000n  482.7277m  482.7277m 
+   42.00000n  482.6203m  482.6204m 
+   43.00000n  482.5925m  482.5926m 
+   44.00000n  482.6996m  482.6997m 
+   45.00000n  482.8066m  482.8067m 
+   46.00000n  482.9137m  482.9138m 
+   47.00000n  483.0208m  483.0208m 
+   48.00000n  483.0485m  483.0485m 
+   49.00000n  482.9417m  482.9418m 
+   50.00000n  482.8349m  482.8350m 
+   51.00000n  482.7282m  482.7282m 
+   52.00000n  482.6214m  482.6215m 
+   53.00000n  482.5938m  482.5938m 
+   54.00000n  482.7002m  482.7003m 
+   55.00000n  482.8067m  482.8068m 
+   56.00000n  482.9132m  482.9133m 
+   57.00000n  483.0197m  483.0198m 
+   58.00000n  483.0473m  483.0473m 
+   59.00000n  482.9411m  482.9411m 
+   60.00000n  482.8349m  482.8349m 
+   61.00000n  482.7287m  482.7287m 
+   62.00000n  482.6225m  482.6225m 
+   63.00000n  482.5950m  482.5950m 
+   64.00000n  482.7009m  482.7010m 
+   65.00000n  482.8068m  482.8069m 
+   66.00000n  482.9127m  482.9128m 
+   67.00000n  483.0186m  483.0187m 
+   68.00000n  483.0461m  483.0461m 
+   69.00000n  482.9404m  482.9405m 
+   70.00000n  482.8348m  482.8349m 
+   71.00000n  482.7292m  482.7292m 
+   72.00000n  482.6235m  482.6236m 
+   73.00000n  482.5767m  482.5767m 
+   74.00000n  482.6294m  482.6294m 
+   75.00000n  482.6821m  482.6821m 
+   76.00000n  482.7348m  482.7348m 
+   77.00000n  482.7875m  482.7875m 
+   78.00000n  482.8206m  482.8207m 
+   79.00000n  482.8207m  482.8208m 
+   80.00000n  482.8208m  482.8208m 
+   81.00000n  482.8208m  482.8209m 
+   82.00000n  482.8209m  482.8210m 
+   83.00000n  482.8209m  482.8210m 
+   84.00000n  482.8209m  482.8209m 
+   85.00000n  482.8208m  482.8209m 
+   86.00000n  482.8207m  482.8208m 
+   87.00000n  482.8207m  482.8207m 
+   88.00000n  482.8206m  482.8207m 
+   89.00000n  482.8207m  482.8208m 
+   90.00000n  482.8208m  482.8208m 
+   91.00000n  482.8208m  482.8209m 
+   92.00000n  482.8209m  482.8210m 
+   93.00000n  482.8209m  482.8210m 
+   94.00000n  482.8209m  482.8209m 
+   95.00000n  482.8208m  482.8209m 
+   96.00000n  482.8207m  482.8208m 
+   97.00000n  482.8207m  482.8207m 
+   98.00000n  482.8207m  482.8207m 
+   99.00000n  482.8208m  482.8209m 
+  100.00000n  482.8210m  482.8210m 
+y
+ dyn_pow=   8.2658u  from=   0.             to= 100.0000n
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  27.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     2
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      36 # elements   =      14
+  # resistors   =       1 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       5
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  dc sweep           0.04         142         324
+  transient          0.01         101         120          31 rev=         1
+  readin             0.02
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         62.12 megabytes
+           total cpu time            0.08 seconds
+           total elapsed time        0.11 seconds
+           job started at     20:53:25 02/20/2023
+           job ended   at     20:53:25 02/20/2023
+           job total runtime         0.11 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)

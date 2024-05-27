@@ -1,0 +1,22 @@
+* "simulator" "HSPICE" 
+* "version" "P-2019.06-SP1-1 win64"
+* "format" "HSP"
+* "rundate" "18:49:08 02/20/2023 "
+* "netlist" "SRAM 10T_W-R-H.SP "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 = 310.4825m       
++ 2 =   6.4646u       
++ bl =   1.0000        
++ blb =   0.            
++ q = 918.7951m       
++ qb =  12.8710u       
++ vdd =   1.0000        
++ wl =   1.0000        
++ wwl =   1.0000        
+***   END: Saved Operating Point ***                     

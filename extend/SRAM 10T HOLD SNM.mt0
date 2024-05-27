@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1 win64' PARAM_COUNT=0
+.TITLE ''
+ dyn_pow          temper           alter#          
+  3.175e-05         27.0000        1               

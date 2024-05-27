@@ -1,0 +1,170 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+  Copyright (c) 1986 - 2023 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: SRAM 10T_W-R-H.SP                                                 
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i SRAM 10T_W-R-H.SP -o C:\Users\Mohammad\Desktop\Low Power Project\SRAM 10 TRANSISTOR_W-R-H\SRAM 10T_W-R-H.lis
+  Start time: Mon Feb 20 18:49:08 2023
+  lic:  
+  lic: FLEXlm: SDK_12.3 
+  lic: USER:   Mohammad             HOSTNAME: MO-LT 
+  lic: HOSTID: "38b1db24c054"       PID:      18800 
+  lic: Using FLEXlm license file: 
+  lic: 27000@MO-LT 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@MO-LT 
+  lic:   
+
+
+ **warning** Too many parameters in power supply, ignored.
+
+
+
+
+ **warning** Too many parameters in power supply, ignored.
+
+
+  **info** (SRAM 10T_W-R-H.SP:17) DC voltage reset to initial transient source value in source 0:vbl. new dc=0.1000D+01
+  **warning** (nmos:mnr (SRAM 10T_W-R-H.SP:23)) Warning:  Acde = 0.280299 may be too small in BSIM4 model with w=4.5e-08 l=4.5e-08.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       = 310.4825m 0:2       =   6.4646u 0:bl      =   1.0000 
+ +0:blb     =   0.      0:q       = 918.7951m 0:qb      =  12.8710u
+ +0:vdd     =   1.0000  0:wl      =   1.0000  0:wwl     =   1.0000 
+
+
+ **** voltage sources
+
+ subckt                                                         
+ element  0:vbl      0:vblb     0:vdd      0:vwl      0:vwwl    
+  volts      1.0000     0.         1.0000     1.0000     1.0000 
+  current  -16.9250u    1.1841n  -15.9372u  -14.7056p  -14.7153p
+  power     16.9250u    0.        15.9372u   14.7056p   14.7153p
+
+     total voltage source power dissipation=   32.8622u       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:mnr      0:mnl      0:mpr      0:mpl      0:mnarr    0:mnall   
+ model    0:nmos     0:nmos     0:pmos     0:pmos     0:nmos     0:nmos    
+ region   Linear     Subth      Subth      Linear     Linear     Saturation
+  id         2.2488n  518.4458p    3.2474n   15.9339u   -1.1788n   16.9250u
+  ibs      1.167e-24  8.709e-25  999.9942f   81.2117f   -6.4655a -310.4860f
+  ibd      -17.8795a -928.7951f -1.303e-24 -7.609e-24  7.322e-24   -1.0100p
+  vgs      918.7951m   12.8710u  918.7822m -918.7822m  999.9935m  689.5175m
+  vds       12.8710u  918.7951m  999.9871m   81.2049m   -6.4646u  689.5175m
+  vbs        0.         0.       999.9871m   81.2049m   -6.4646u -310.4825m
+  vth      466.7806m  350.0881m -335.9476m -475.2822m  466.7814m  438.7362m
+  vdsat    285.3199m   39.2476m  -44.5775m -389.3529m  327.0677m  179.6621m
+  vod      452.0145m -350.0752m  254.7427m -524.7049m  533.2186m  250.7813m
+  beta       1.0648m    1.8355m  912.9806u  686.5001u    1.0028m    1.2990m
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m
+  gm         1.3849n   13.8270n   88.4763n   17.7837u  528.1262p   78.0596u
+  gds      174.7155u    1.9298n   16.8574n  180.3896u  182.3397u   12.2714u
+  gmb      568.1238p    3.5371n   19.9898n    5.6277u  245.1049p   15.6184u
+  cdtot     59.3542a   27.4585a   79.8426a  100.2546a   41.1224a   31.6072a
+  cgtot     52.8989a   27.9455a   64.9929a  119.0145a   53.2235a   47.1554a
+  cstot     54.7665a   50.1905a   78.4924a  129.4880a   73.5973a   58.7927a
+  cbtot     62.4185a   58.4288a  110.9934a  122.2734a   62.4129a   53.6843a
+  cgs       29.3814a   14.2627a   21.2344a   42.5607a   23.3521a   33.4923a
+  cgd       23.0929a    9.3202a   34.9336a   75.7026a   29.5144a   12.6974a
+
+
+
+ subckt                                              
+ element  0:mnar     0:mnal     0:mndr     0:mndl    
+ model    0:nmos     0:nmos     0:nmos     0:nmos    
+ region   Linear     Saturation Cutoff     Linear    
+  id        -1.1681n  -15.9332u    4.3542f   32.8582u
+  ibs      -12.8728a -918.7986f    0.       2.397e-24
+  ibd       -8.9805a -320.4824f   -8.9805a -320.4824f
+  vgs      999.9871m   81.2049m   12.8710u  918.7951m
+  vds       -6.4064u -608.3126m    6.4646u  310.4825m
+  vbs      -12.8710u -918.7951m    0.         0.     
+  vth      466.7827m  449.0497m  466.7814m  427.3483m
+  vdsat    327.0638m  174.8679m   40.4041m  302.5022m
+  vod      533.2108m  240.4678m -466.7685m  491.4467m
+  beta       1.0028m    1.2861m    1.4919m    1.1032m
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m
+  gm       523.3822p   77.0249u  117.3529f   59.0264u
+  gds      182.3389u   12.1594u  673.4940p   41.3761u
+  gmb      242.8994p   15.3764u   32.6090f   15.0176u
+  cdtot     41.1224a   46.4155a   36.7173a   37.4901a
+  cgtot     53.2235a   48.1273a   32.8875a   51.5324a
+  cstot     73.5971a   43.7896a   50.1904a   62.7673a
+  cbtot     62.4127a   52.4743a   62.7455a   59.6634a
+  cgs       23.3521a   13.7567a   14.2626a   35.0764a
+  cgd       29.5144a   33.4008a   14.2623a   15.7293a
+
+
+
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      50 # elements   =      15
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      10 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1         108
+  transient          0.01        9001         219          93 rev=         4
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         62.20 megabytes
+           total cpu time            0.04 seconds
+           total elapsed time        0.08 seconds
+           job started at     18:49:08 02/20/2023
+           job ended   at     18:49:08 02/20/2023
+           job total runtime         0.08 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)

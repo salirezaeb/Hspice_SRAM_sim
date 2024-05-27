@@ -1,0 +1,56 @@
+****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******
+Input File: SRAM 10T HOLD SNM.sp
+lic:
+lic: FLEXlm: SDK_12.3
+lic: USER:   Mohammad             HOSTNAME: MO-LT
+lic: HOSTID: "38b1db24c054"       PID:      11628
+lic: Using FLEXlm license file:
+lic: 27000@MO-LT
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@MO-LT
+lic:
+
+ init: begin read circuit files, cpu clock= 5.10E-02
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option post =     2.00
+ init: end read circuit files, cpu clock= 5.70E-02 peak memory=      62 mb
+ init: begin check errors, cpu clock= 5.70E-02
+ init: end check errors, cpu clock= 6.80E-02 peak memory=      62 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 6.80E-02
+       establish matrix -- done, cpu clock= 6.90E-02 peak memory=      62 mb
+       re-order matrix -- done, cpu clock= 6.90E-02 peak memory=      62 mb
+ init: end setup matrix, cpu clock= 6.90E-02 peak memory=      62 mb
+ output: C:\Users\Mohammad\Desktop\Low Power Project\New folder\SRAM 10T HOLD SN
+ sweep: dc dc0    begin, #sweeps= 142 cpu clock= 7.10E-02
+ sweep: dc dc0    end, cpu clock= 1.23E-01 peak memory=      62 mb
+ output: C:\Users\Mohammad\Desktop\Low Power Project\New folder\SRAM 10T HOLD SN
+ sweep: tran tran0    begin, stop_t=  1.00E-07 #sweeps= 101 cpu clock= 1.28E-01
+ tran: time= 1.2766E-08 tot_iter=      36 conv_iter=       9 cpu clock= 1.32E-01
+ tran: time= 2.2766E-08 tot_iter=      42 conv_iter=      11 cpu clock= 1.33E-01
+ tran: time= 3.2766E-08 tot_iter=      48 conv_iter=      13 cpu clock= 1.33E-01
+ tran: time= 4.2766E-08 tot_iter=      54 conv_iter=      15 cpu clock= 1.33E-01
+ tran: time= 5.2766E-08 tot_iter=      60 conv_iter=      17 cpu clock= 1.34E-01
+ tran: time= 6.2766E-08 tot_iter=      66 conv_iter=      19 cpu clock= 1.34E-01
+ tran: time= 7.2766E-08 tot_iter=      72 conv_iter=      21 cpu clock= 1.34E-01
+ tran: time= 8.2766E-08 tot_iter=      78 conv_iter=      23 cpu clock= 1.35E-01
+ tran: time= 9.2766E-08 tot_iter=      84 conv_iter=      25 cpu clock= 1.35E-01
+ tran: time= 1.0000E-07 tot_iter=      89 conv_iter=      27 cpu clock= 1.36E-01
+ sweep: tran tran0    end, cpu clock= 1.36E-01 peak memory=      62 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

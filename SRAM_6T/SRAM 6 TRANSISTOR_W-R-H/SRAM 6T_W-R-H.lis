@@ -1,0 +1,137 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+  Copyright (c) 1986 - 2023 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: SRAM 6T_W-R-H.SP                                                  
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i SRAM 6T_W-R-H.SP -o C:\Users\Mohammad\Desktop\Low Power Project\SRAM 6 TRANSISTOR_W-R-H\SRAM 6T_W-R-H.lis
+  Start time: Mon Feb 20 18:46:37 2023
+  lic:  
+  lic: FLEXlm: SDK_12.3 
+  lic: USER:   Mohammad             HOSTNAME: MO-LT 
+  lic: HOSTID: "38b1db24c054"       PID:      6004 
+  lic: Using FLEXlm license file: 
+  lic: 27000@MO-LT 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@MO-LT 
+  lic:   
+
+
+ **warning** Too many parameters in power supply, ignored.
+
+
+  **info** (SRAM 6T_W-R-H.SP:17) DC voltage reset to initial transient source value in source 0:vbl. new dc=0.1000D+01
+  **warning** (nmos:mnr (SRAM 6T_W-R-H.SP:22)) Warning:  Acde = 0.280299 may be too small in BSIM4 model with w=4.5e-08 l=4.5e-08.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:bl      =   1.0000  0:blb     =   0.      0:q       = 999.9960m
+ +0:qb      =   1.4832u 0:vdd     =   1.0000  0:wl      =   1.0000 
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vbl      0:vblb     0:vdd      0:vwl     
+  volts      1.0000     0.         1.0000     1.0000 
+  current   -1.0100p  275.7636p   -1.2475n  -13.4399p
+  power      1.0100p    0.         1.2475n   13.4399p
+
+     total voltage source power dissipation=    1.2620n       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:mnr      0:mnl      0:mpr      0:mpl      0:mnar     0:mnal    
+ model    0:nmos     0:nmos     0:pmos     0:pmos     0:nmos     0:nmos    
+ region   Linear     Subth      Subth      Linear     Linear     Cutoff    
+  id       270.4490p  701.8285p  344.6024p  840.5659p -270.4494p    5.0030a
+  ibs      5.271e-24  9.472e-25    1.0000p    3.9582a   -1.4834a -999.9996f
+  ibd       -2.0605a   -1.0100p -1.303e-24 -6.273e-24  7.322e-24   -1.0100p
+  vgs      999.9960m    1.4832u  999.9946m -999.9946m  999.9985m    3.9571u
+  vds        1.4832u  999.9960m  999.9985m    3.9571u   -1.4832u    3.9571u
+  vbs        0.         0.       999.9985m    3.9571u   -1.4832u -999.9960m
+  vth      466.7820m  339.7750m -335.9459m -487.5965m  466.7820m  635.3182m
+  vdsat    327.0654m   39.1436m  -44.4970m -383.1148m  327.0674m   41.3842m
+  vod      533.2140m -339.7736m  335.9420m -512.4021m  533.2180m -635.3142m
+  beta       1.0028m    1.8693m  912.8694u  680.0545u    1.0028m    1.1145m
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m
+  gm       121.1690p   18.6822n    9.6156n  827.2266p  121.1675p  149.4707a
+  gds      182.3415u    2.6291n    1.8234n  212.4207u  182.3418u    1.2643p
+  gmb       56.2354p    4.7466n    2.2845n  283.0573p   56.2350p   27.0330a
+  cdtot     60.1248a   27.1512a   77.4410a   88.9259a   41.1221a   32.1553a
+  cgtot     53.2235a   27.8833a   62.9150a  120.3046a   53.2236a   31.5187a
+  cstot     54.5951a   50.1904a   78.3505a  154.3024a   73.5978a   42.8912a
+  cbtot     62.4130a   58.1837a  111.4588a  125.1125a   62.4130a   49.5160a
+  cgs       29.5142a   14.2626a   21.0927a   51.5031a   23.3523a   14.2624a
+  cgd       23.3523a    9.2581a   32.5313a   68.2769a   29.5142a   14.2623a
+
+
+
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      31 # elements   =      10
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           4
+  transient          0.00        9001         166          75 rev=         4
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         62.98 megabytes
+           total cpu time            0.03 seconds
+           total elapsed time        6.07 seconds
+           job started at     18:46:37 02/20/2023
+           job ended   at     18:46:43 02/20/2023
+           job total runtime         6.07 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        6.02(s)
